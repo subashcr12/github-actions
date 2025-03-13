@@ -1,0 +1,22 @@
+name: cronjob
+on:
+  schedule: 
+   - cron: '* * * * *'
+
+jobs:
+  cron:
+  runs-on: ubuntu-latest
+
+steps:
+ - name: clone rep
+   uses: actions/checkout@v4
+
+ - name: clone rep 
+   uses: actions/setup-python@v5
+   with:
+     python-version: '3.13' 
+
+ - name: run python
+   run: python hey.py
+      
+   
