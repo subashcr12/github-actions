@@ -5,7 +5,7 @@ on:
 
 jobs:
   cron:
-  runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
 steps:
  - name: clone rep
